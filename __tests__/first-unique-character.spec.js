@@ -30,6 +30,13 @@ describe('firstUniqueCharacter', () => {
     });
   });
 
+   describe('when input is the first unique character in a string', () => {
+    it('should return correct input', () => {
+      const result = firstUniqueCharacter(' dd d ee   ');
+      expect(result).toEqual(undefined);
+    });
+  });
+
 
 
 });
