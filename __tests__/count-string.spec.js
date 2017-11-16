@@ -37,6 +37,8 @@ describe('countString', () => {
 
 
   // example tests
+  // 1. when input test has duplicated
+  // 2. when input test has no duplicated
   describe('when string is a string and length is greater than 0', () => {
     it('should return aabbcc', () => {
       const result = countString('aaabbbccc');
@@ -46,7 +48,7 @@ describe('countString', () => {
 
   describe('when string is a string and length is greater than 0', () => {
     it('should return g1h1j1f2', () => {
-      const result = countString('ghjff');
+      const result = countString('  gh  jff  ');
       expect(result).toEqual('g1h1j1f2');
     });
   });
